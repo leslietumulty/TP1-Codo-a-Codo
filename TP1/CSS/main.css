@@ -17,7 +17,7 @@ header {
 }
 
 #header-logo img {
-    height: 120px;
+    height: 100px;
     display: flex;
 
 }
@@ -111,13 +111,54 @@ table {
 
 }
 
-form p {
-    margin-bottom: 20px;
+.form-contenedor {
+    display: flex;
+    justify-content: center;
 }
 
-form input {
+form label {
+    width: 40%;
+    display: inline-block;
+}
+
+
+form p {
+    margin-bottom: 20px;
+
+}
+
+form input[type="text"] {
     margin-left: 5px;
     margin-right: 5px;
+    outline: 1px solid rgb(129, 212, 163);
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+    width: 50%;
+    height: 25px;
+}
+
+form input:focus {
+    background-color: rgb(129, 212, 163);
+    color: white;
+}
+
+form input[type="submit"] {
+    background-color: rgb(129, 212, 163);
+    color: white;
+    width: 20%;
+    height: auto;
+    padding: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(89, 177, 126);
+    transform: scale(1.1);
+    font-weight: 700;
 }
 
 .sucursales iframe {
